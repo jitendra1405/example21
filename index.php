@@ -61,14 +61,11 @@
              
             <form method="post">
                 <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input  type="tetxt" class="form-control" name="firstName" id="firstName" placeholder="First Name">
+                    <label for="firstName">Last Name</label>
+                    <input  type="tetxt" class="form-control" name="firstName" id="firstName" placeholder="First Name" onclick="abc()">
                 </div>
 
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input  required="true" type="tetxt" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
-                </div>
+               
                  
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
