@@ -40,9 +40,9 @@
             $fName = pg_escape_string($_POST['name']);
             
             
-            if(!empty( $name )){ 
+            if(!empty( $fName )){ 
 
-                $sql = "INSERT into contact.contact (name) values ('".$fName."')" ;
+                $sql = "INSERT into contact.contact (name) values ('HHHHHHHHHHH')" ;
                 pg_query($dbconn, $sql); 
     ?> 
             <div class="alert alert-success" role="alert">
