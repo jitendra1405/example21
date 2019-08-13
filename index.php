@@ -40,7 +40,7 @@
             
             if(!empty( $fName )){ 
 
-                $sql = "INSERT into contact.contact(systemmodstamp,isdeleted,firstname) values ('2019-08-13 07:29:59',false,'HHHHHHHHHHH')" ;
+                $sql = "INSERT into contact.contact values ('HHHHHHHHHHH')" ;
                 pg_query($dbconn, $sql); 
          
     ?> 
