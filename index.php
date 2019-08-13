@@ -40,7 +40,7 @@
             
             if(!empty( $fName )){ 
 
-                $sql = "INSERT into contact.contact values ('HHHHHHHHHHH')" ;
+                $sql = "INSERT into contact.contact values ('', ,'HHHHHHHHHHH')" ;
                 pg_query($dbconn, $sql); 
          
     ?> 
