@@ -30,6 +30,7 @@
     </div> 
 
     <?php
+      function abc(){
         /*
             Sample Database String from Heroku
             'postgres://wvvgxgeoriumxg:c4e8612ae286a211a8c94976df0811e9b6fcdacb3ef3e468401e0619b38a1004@ec2-107-22-168-211.compute-1.amazonaws.com:5432/d5siauekbh9qlu' 
@@ -44,6 +45,7 @@
 
                 $sql = "INSERT into contact.contact (name) values ('HHHHHHHHHHH')" ;
                 pg_query($dbconn, $sql); 
+            }
     ?> 
             <div class="alert alert-success" role="alert">
                 Record Inserted Succesfully in Heroku Postgres Database !!!
