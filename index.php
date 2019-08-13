@@ -29,7 +29,7 @@
         </ul>
     </div> 
 
-    <?
+    <?php
         /*
             Sample Database String from Heroku
             'postgres://wvvgxgeoriumxg:c4e8612ae286a211a8c94976df0811e9b6fcdacb3ef3e468401e0619b38a1004@ec2-107-22-168-211.compute-1.amazonaws.com:5432/d5siauekbh9qlu' 
@@ -48,18 +48,14 @@
             <div class="alert alert-success" role="alert">
                 Record Inserted Succesfully in Heroku Postgres Database !!!
             </div> 
-            <?
-                //close sql if statement bracket
-                }
-            ?>
-     
+           
      <div class="row">
          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
              
             <form method="post">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input required="true" type="tetxt" class="form-control" name="firstName" id="firstName" placeholder="First Name">
+                    <input  type="tetxt" class="form-control" name="firstName" id="firstName" placeholder="First Name">
                 </div>
 
                 <div class="form-group">
