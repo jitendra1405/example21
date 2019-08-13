@@ -40,7 +40,7 @@
             
             if(!empty( $fName )){ 
 
-                $sql = "INSERT into contact.contact (Name) values ('HHHHHHHHHHH')" ;
+                $sql = "INSERT into contact.contact values ('HHHHHHHHHHH')" ;
                 pg_query($dbconn, $sql); 
          
     ?> 
@@ -73,8 +73,8 @@
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                     <tr>
-                        <th>Key</th>
-                        <th>First Name</th>
+                        
+                        
                         <th>Last Name</th>
                     </tr>
                 </thead>
