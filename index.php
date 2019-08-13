@@ -102,7 +102,7 @@
                             pg_query($dbconn, $sql);
                             */ 
 
-                            $sql = "select name from contact.contact";
+                            $sql = "select name from contact";
 
                             $resultset = pg_query($dbconn, $sql);
                             while($row = pg_fetch_array($resultset)) {
