@@ -42,7 +42,7 @@
             
             if(!empty( $name )){ 
 
-                $sql = "INSERT into contact.contact (name) values ('".$fName."', '".$lName."')" ;
+                $sql = "INSERT into contact.contact (name) values ('".$fName."')" ;
                 pg_query($dbconn, $sql); 
     ?> 
             <div class="alert alert-success" role="alert">
