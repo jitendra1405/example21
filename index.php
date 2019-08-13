@@ -35,12 +35,12 @@
 
             $dbconn = pg_connect("host=ec2-50-19-124-157.compute-1.amazonaws.com port=5432 dbname=d58o173hbaukt7 user=nfltllotkrgbnc password=6501404a979c7d7bb1da09c71cd54a6b83fb4986354072611d25bf3c0f0287e0");
 
-            $fName = pg_escape_string($_POST['Name']);
+            $fName = pg_escape_string($_POST['firstname']);
             
             
             if(!empty( $fName )){ 
 
-                $sql = "INSERT into contact.contact values ('HHHHHHHHHHH')" ;
+                $sql = "INSERT into contact.contact(systemmodstamp,isdeleted,firstname) values ('2019-08-13 07:29:59',false,'HHHHHHHHHHH')" ;
                 pg_query($dbconn, $sql); 
          
     ?> 
@@ -99,7 +99,7 @@
                             pg_query($dbconn, $sql);
                             */ 
 
-                            $sql = "select name from contact.contact";
+                            $sql = "select firstname from contact.contact";
 
                             $resultset = pg_query($dbconn, $sql);
                             while($row = pg_fetch_array($resultset)) {
