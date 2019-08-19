@@ -42,7 +42,7 @@
             
             if(!empty( $name )){ 
 
-                $sql = "INSERT into contact.contact (name) values ('".$fName."')" ;
+                $sql = "INSERT into contact.contact (FirstName) values ('".$fName."')" ;
                 pg_query($dbconn, $sql); 
     ?> 
             <div class="alert alert-success" role="alert">
@@ -102,7 +102,7 @@
                             pg_query($dbconn, $sql);
                             */ 
 
-                            $sql = "select name from contact.contact";
+                            $sql = "select FirstName from contact.contact";
 
                             $resultset = pg_query($dbconn, $sql);
                             while($row = pg_fetch_array($resultset)) {
