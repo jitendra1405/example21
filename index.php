@@ -3,7 +3,7 @@
    
    <body class="login">
       
-				<form action="theSamePage.php" method="post">
+				<form action="index.php" method="post">
     								<input type="submit" name="someAction" value="GO" />
 		
 	 <?php
